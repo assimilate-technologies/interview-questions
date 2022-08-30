@@ -18,6 +18,14 @@ Do yourself a favor—Google the interviewer. Look at his/her Linkedin profile. 
 Researching relevant team members on LinkedIn and github can be useful as well.
 
 
+### angular-cli
+1. What is the use of angular cli? and Why?
+2. How would you run unit test? and why it is required?
+3. How do you create application to use scss?
+4. How to inject base href?
+5. How would you extract webpack config from angular cli project?
+
+
 ## Further help - Novice Level
 
 At this level an interviewer wants to know whether the interviewee is a coachable self-learner. Hence, he/she might ask questions about basic terminology, your ability to build a simple app, and your comprehension of basic concepts
