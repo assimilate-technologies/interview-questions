@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -32,6 +33,9 @@ a img {
     width: auto;
 }
 
+.mdl-layout__content {
+    display: block!important;
+}
 .dude-fab {
     position: absolute;
     right: 20%;
