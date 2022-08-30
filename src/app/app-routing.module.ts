@@ -13,7 +13,15 @@ const routes: Routes = [
   {
     path: 'javascript',
     loadChildren: () => import('./javascript/javascript.module').then(m => m.JavascriptModule)
-  }];
+  },
+  {
+    path: 'not-found',
+    loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule)
+  },
+  {
+    path: '**', redirectTo: 'not-found'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
