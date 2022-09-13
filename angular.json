@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/interview-questions",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/scss/material.scss",
+              "src/assets/scss/custom.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/javascript/material.js"
+            ]
           },
           "configurations": {
             "production": {

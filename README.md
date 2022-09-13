@@ -1,27 +1,31 @@
 # InterviewQuestions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+# Angular Interview Questions
 
-## Development server
+A complete guideline to prepare for angular interviews. Also, you can use these questions to verify your expertise in angular. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Assess Your Skill Level
+The most important step is knowing how you compare to other job seekers. Pinpoint areas where you are weaker, and spend the time necessary to make improvements. Google is your friend.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Know the Interviewer
+Do yourself a favor—Google the interviewer. Look at his/her Linkedin profile. Check his/her youtube videos, crappy old blog that hasn't been updated in years, and github profile. After your research, try to put the interviewer in one of the following categories:
+1. Lazy interviewers wil ask about terminology. Sometimes they just Google and ask questions from there. If your interviewer is older and out of touch with the current development landscape, there is a greater chance that he/she will ask questions related to terminology.
+2. More modest and nicer interviewers will be interested in what you know and whether you can get the job done. For this kind of interviewer look at the How category questions (I'm unsure what you are trying to say here)
+3. Experienced interviewers (those who have been senior developers for a long time and have recently updated blogs and videos) want to know that you can think critically, and he will be interested in your process for decision making. These interviewers love to prove you wrong. One important tip: don't try to prove them wrong.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Researching relevant team members on LinkedIn and github can be useful as well.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### angular-cli
+1. What is the use of angular cli? and Why?
+2. How would you run unit test? and why it is required?
+3. How do you create application to use scss?
+4. How to inject base href?
+5. How would you extract webpack config from angular cli project?
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Further help - Novice Level
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+At this level an interviewer wants to know whether the interviewee is a coachable self-learner. Hence, he/she might ask questions about basic terminology, your ability to build a simple app, and your comprehension of basic concepts

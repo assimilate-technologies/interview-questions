@@ -1,0 +1,67 @@
+<div class="dude-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout__drawer-button" (click)="isDiaplyMenu=!isDiaplyMenu"><i class="material-icons">menu</i></div>
+    <div class="mdl-layout__header-row">
+        <span class="dude-title mdl-layout-title">
+            <img class="dude-logo logo-main" src="assets/images/logo.png">
+        </span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="dude-header-spacer mdl-layout-spacer"></div>
+        <div
+            class="dude-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="dude-navigation-container">
+            <nav class="dude-navigation mdl-navigation">
+                <ng-container  *ngFor="let menu of menus">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase"  [routerLink]="menu.routerLink" routerLinkActive="active">{{menu.menuHeader}}</a>
+                </ng-container>
+            </nav>
+        </div>
+        <span class="dude-mobile-title mdl-layout-title">
+            <img class="dude-logo-image" src="assets/images/logo.png">
+        </span>
+        <button class="dude-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"
+            id="more-button">
+            <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">Beginners Level-Terminology</li>
+            <li class="mdl-menu__item">Beginners Level-Coding Ability</li>
+            <li class="mdl-menu__item">Beginners Level- Understandability</li>
+            <li class="mdl-menu__item">JavaScript Interview Question</li>
+            <li class="mdl-menu__item">CSS Interview Questiont</li>
+        </ul>
+    </div>
+</div>
+
+<div class="dude-drawer mdl-layout__drawer" [ngClass]="{'is-visible': isDiaplyMenu}">
+    <span class="mdl-layout-title">
+        <img class="dude-logo logo-white" src="assets/images/logo-white.png">
+    </span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">All Questions</a>
+        <a class="mdl-navigation__link" href="">JavaScript Questions</a>
+
+        <div class="dude-drawer-separator"></div>
+        <span class="mdl-navigation__link" href="">Beginners Level</span>
+        <a class="mdl-navigation__link" href="">Terminology Related</a>
+        <a class="mdl-navigation__link" href="">Coding Ability Related</a>
+        <a class="mdl-navigation__link" href="">Understandability Related</a>
+        <div class="dude-drawer-separator"></div>
+        <span class="mdl-navigation__link" href="">Intermediate Level</span>
+        <a class="mdl-navigation__link" href="">Essential Terminology</a>
+        <a class="mdl-navigation__link" href="">Build Medium Size App</a>
+        <a class="mdl-navigation__link" href="">Understand Core Concpets</a>
+        <div class="dude-drawer-separator"></div>
+        <span class="mdl-navigation__link" href="">Expert Level</span>
+        <a class="mdl-navigation__link" href="">Master a Large App Related</a>
+        <a class="mdl-navigation__link" href="">Rock star and Fighter for angular</a>
+    </nav>
+</div>
+<div class="mdl-layout__obfuscator" [ngClass]="{'is-visible': isDiaplyMenu}" (click)="isDiaplyMenu=!isDiaplyMenu"></div>
